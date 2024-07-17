@@ -1,45 +1,78 @@
-var layout = {
-  title: {
-    text:'Plot Title',
-    font: {
-      family: 'Courier New, monospace',
-      size: 24
-    },
-    xref: 'paper',
-    x: 0.05,
-  },
-  paper_bgcolor: "orange",
-  xaxis: {
-    title: {
-      text: 'x Axis Line',
-      font: {
-        family: 'Courier New, monospace',
-        size: 18,
-        color: '#7f7f7f'
-      }
-    },
-  },
-  yaxis: {
-    title: {
-      text: 'y Axis Line',
-      font: {
-        family: 'Courier New, monospace',
-        size: 18,
-        color: '#7f7f7f'
-      }
-    }
-  }
-};
+<!DOCTYPE html>
+<html>
 
-TESTER = document.getElementById("tester");
-Plotly.newPlot(
-  TESTER,
-  [
-    {
-      x: ['red', 'green', 'orange', 'yellow', 'purple'],
-      y: [1, 2, 4, 8, 16],
-    type: 'bar'
-    }
-  ],
-  layout
-);
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+</body>
+
+</html>
+<style>
+  body {
+    background-image: url('https://wallpapers.com/images/featured/plain-grey-background-ydlwqztavi78gl24.jpg');
+  }
+</style>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
+
+<div id="tester" style="width:600px;height:250px;"></div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar Graph</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <div id="myBarChart" style="width:600px;height:400px;"></div>
+  <script>
+    var data = [{
+      x: ['Blue', 'Cyan', 'Green', 'Yellow', 'Orange', 'Red', 'Deep Red'], // X-axis labels
+      y: [23.98523985, 12.06140351, 15.12605042, 14.07657658, 15.87837838, 33.95784543, 54.57920792], // Y-axis values
+      type: 'bar'
+    }];
+
+    var layout = {
+      title: 'Reflectance Spectrum',
+      xaxis: {
+        title: 'Colors'
+      },
+      yaxis: {
+        title: 'Reflectance %'
+      }
+    };
+
+    Plotly.newPlot('myBarChart', data, layout);
+  </script>
+</body>
+
+</html>
+
+<style>
+  body {
+    background-image: url('https://wallpapers.com/images/featured/plain-grey-background-ydlwqztavi78gl24.jpg');
+  }
+</style>
+
+<img src="https://facts.net/wp-content/uploads/2023/10/20-astonishing-facts-about-spectroscopy-1697686864.jpg"
+  height=240 width=320 </body>
+
+
+</html>
+
+
+<script src="script.js"></script>
+</body>
+
+
+
+
+
+<html>
